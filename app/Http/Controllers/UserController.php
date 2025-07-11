@@ -14,7 +14,6 @@ class UserController extends Controller
         // Get the user from the oauth provider
         $oauthUser = Socialite::driver($provider)->user();
 
-
         // Existing check
         $user = User::query()->firstOrCreate([
             'name' => $oauthUser->getName(),

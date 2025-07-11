@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
+use App\View\Composers\NavigationComposer;
+use BladeUI\Icons\Factory;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,5 +26,7 @@ class AppServiceProvider extends ServiceProvider
         Event::listen(function (\SocialiteProviders\Manager\SocialiteWasCalled $event) {
             $event->extendSocialite('google', \SocialiteProviders\Google\Provider::class);
         });
+
+        Facades\View::composer("components.navigation", NavigationComposer::class);
     }
 }
