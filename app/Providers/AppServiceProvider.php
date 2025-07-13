@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\View\Composers\NavigationComposer;
-use BladeUI\Icons\Factory;
+use App\View\Composers\OauthComposer;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades;
@@ -27,6 +27,9 @@ class AppServiceProvider extends ServiceProvider
             $event->extendSocialite('google', \SocialiteProviders\Google\Provider::class);
         });
 
+
+        // REGISTER COMPOSERS
         Facades\View::composer("components.navigation", NavigationComposer::class);
+        Facades\View::composer("components.oauth", OauthComposer::class);
     }
 }

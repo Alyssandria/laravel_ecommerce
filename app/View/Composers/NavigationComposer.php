@@ -11,30 +11,41 @@ class NavigationComposer
         $navItems = [
             'logo' => [
                 'link' => '/',
-                'label' => 'Loremipsum',
+                'label' => '',
+                'icon' => 'logofull',
+                'iconClassName' => 'w-32 sm:w-52',
                 'className' => 'flex gap-1'
             ],
             'home' => [
                 'link' => '/',
                 'label' => 'Home',
+                'icon' => '',
+                'iconClassName' => '',
                 'className' => 'hidden lg:block'
             ],
             'shop' => [
                 'link' => '/shop',
                 'label' => 'Shop',
+                'iconClassName' => '',
+                'icon' => '',
                 'className' => 'hidden lg:block'
             ],
             'contact' => [
                 'link' => '/contact',
+                'iconClassName' => '',
                 'label' => 'Contact',
+                'icon' => '',
                 'className' => 'hidden lg:block'
             ],
             'login' => [
                 'link' => '/login',
                 'label' => 'Login/register',
-                'className' => 'hidden lg:block ml-auto'
+                'iconClassName' => 'size-4',
+                'icon' => 'bi-person',
+                'className' => 'hidden ml-auto lg:flex lg:items-center gap-2'
             ]
         ];
+
         $view->with('navItems', $navItems);
     }
 }

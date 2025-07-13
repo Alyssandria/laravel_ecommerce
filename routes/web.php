@@ -8,6 +8,14 @@ Route::get('/', function () {
     return view('index');
 })->name('app.home');
 
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('app.auth.login');
+
+Route::get('/signin', function () {
+    return view('auth.signin');
+})->name('app.auth.signin');
+
 Route::get('/auth/redirect/{provider}', function ($provider) {
     return Socialite::driver($provider)->redirect();
 });
