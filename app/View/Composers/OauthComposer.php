@@ -10,8 +10,8 @@ class OauthComposer
     {
         $providers = [
             'google' => [
-                'className' => 'text-[#EA4335]',
-                'icon' => 'bi-google'
+                'className' => 'w-16 text-[#EA4335]',
+                'icon' => 'google'
             ],
             'facebook' => [
                 'className' => 'text-[#1877F2]',

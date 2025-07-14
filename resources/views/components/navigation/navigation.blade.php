@@ -13,9 +13,9 @@
                     </a>
                 </li>
             @endforeach
-            <x-search />
-            <x-cart />
-            <x-menu />
+            <x-navigation.search />
+            <x-navigation.cart />
+            <x-navigation.menu />
         </ul>
     </nav>
 </header>

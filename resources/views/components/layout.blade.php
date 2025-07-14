@@ -10,7 +10,7 @@
 
 <body>
     <div class="w-full  p-8 max-md:px-4">
-        <x-navigation />
+        <x-navigation.navigation />
 
         <main class="main-container">
             {{ $slot }}

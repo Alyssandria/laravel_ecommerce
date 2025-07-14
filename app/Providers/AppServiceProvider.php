@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
 
 
         // REGISTER COMPOSERS
-        Facades\View::composer("components.navigation", NavigationComposer::class);
-        Facades\View::composer("components.oauth", OauthComposer::class);
+        Facades\View::composer("components.navigation.navigation", NavigationComposer::class);
+        Facades\View::composer("components.auth.oauth", OauthComposer::class);
     }
 }
