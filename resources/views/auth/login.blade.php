@@ -3,6 +3,7 @@
 
     <x-auth.layout>
         <form method="post" class="flex flex-col gap-6 items-center w-full">
+            @csrf
             <fieldset class="flex flex-col gap-6 w-full">
                 <label for="username" class="flex flex-col gap-2">
                     User name

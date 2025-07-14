@@ -6,9 +6,11 @@
     <title>Loremipsum | {{ $title ?? 'Home' }}</title>
 </head>
 
-@vite('resources/css/app.css')
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 
 <body>
+        <h1 x-data="{message : 'Hello World'}" ></h1>
+
     <div class="w-full  p-8 max-md:px-4">
         <x-navigation.navigation />
 

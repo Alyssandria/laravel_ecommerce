@@ -9,10 +9,6 @@ class OauthComposer
     public function compose(View $view)
     {
         $providers = [
-            'google' => [
-                'className' => 'w-16 text-[#EA4335]',
-                'icon' => 'google'
-            ],
             'facebook' => [
                 'className' => 'text-[#1877F2]',
                 'icon' => 'bi-facebook'
@@ -20,7 +16,11 @@ class OauthComposer
             'apple' => [
                 'className' => '',
                 'icon' => 'bi-apple'
-            ]
+            ],
+            'google' => [
+                'className' => 'text-[#EA4335]',
+                'icon' => 'icon-google'
+            ],
         ];
 
         $view->with('providers', $providers);
