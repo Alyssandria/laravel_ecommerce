@@ -5,14 +5,15 @@
         <form method="post" class="flex flex-col gap-6 items-center w-full">
             @csrf
             <fieldset class="flex flex-col gap-6 w-full">
-                <label for="username" class="flex flex-col gap-2">
-                    User name
-                    <x-ui.input placeholder="Enter your user name" id="username" />
-                </label>
-                <label for="username" class="flex flex-col gap-2">
-                    Password
-                    <x-ui.input placeholder="Enter your password" type="password" id="username" />
-                </label>
+
+                <x-ui.input placeholder="Enter your user name" id="username">
+                    <x-slot:label>User name</x-slot:label>
+                </x-ui.input>
+
+                <x-ui.input placeholder="Enter your password" type="password" id="password">
+                    <x-slot:label>Password</x-slot:label>
+                </x-ui.input>
+
             </fieldset>
             <x-ui.button type="submit" class="block" variant="pill">Login</x-ui.button>
         </form>
