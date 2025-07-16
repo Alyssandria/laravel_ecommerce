@@ -1,5 +1,5 @@
 <li>
     <button>
-        <x-bytesize-cart class="w-6" />
+        <x-bi-cart class="w-6" />
     </button>
 </li>

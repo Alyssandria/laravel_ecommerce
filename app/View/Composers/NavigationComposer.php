@@ -37,13 +37,6 @@ class NavigationComposer
                 'icon' => '',
                 'className' => 'hidden lg:block'
             ],
-            'login' => [
-                'link' => '/login',
-                'label' => 'Login/register',
-                'iconClassName' => 'size-4',
-                'icon' => 'bi-person',
-                'className' => 'hidden ml-auto lg:flex lg:items-center gap-2'
-            ]
         ];
 
         $view->with('navItems', $navItems);

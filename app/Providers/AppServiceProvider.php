@@ -3,7 +3,6 @@
 namespace App\Providers;
 
 use App\View\Composers\NavigationComposer;
-use App\View\Composers\OauthComposer;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades;
@@ -30,6 +29,5 @@ class AppServiceProvider extends ServiceProvider
 
         // REGISTER COMPOSERS
         Facades\View::composer("components.navigation.navigation", NavigationComposer::class);
-        Facades\View::composer("components.auth.oauth", OauthComposer::class);
     }
 }
