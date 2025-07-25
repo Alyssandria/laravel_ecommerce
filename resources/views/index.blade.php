@@ -1,3 +1,5 @@
 <x-layout>
-            Hello from layout
+            @auth
+                {{ Auth::user()->name }}
+            @endauth
 </x-layout>

@@ -19,7 +19,7 @@
             <div class="flex gap-8 items-center">
                 @guest
                     <li >
-                        <a href="{{ route('app.auth.login') }}" class="font-bold hidden ml-auto lg:flex lg:items-center gap-2">
+                        <a href="{{ route('login') }}" class="font-bold hidden ml-auto lg:flex lg:items-center gap-2">
                             <x-bi-person class="size-4"/> Login/Register
                         </a>
                     </li>

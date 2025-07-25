@@ -3,8 +3,8 @@
 use App\Http\Controllers\Auth\AuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/login', [AuthController::class, 'createLogin'])->name('app.auth.login');
-Route::get('/register', [AuthController::class, 'createRegister'])->name('app.auth.register');
+Route::get('/login', [AuthController::class, 'createLogin'])->name('login');
+Route::get('/register', [AuthController::class, 'createRegister'])->name('register');
 
 // CREDENTIALS SUBMIT
 Route::post('auth/login', [AuthController::class, 'store'])->name('login.submit');

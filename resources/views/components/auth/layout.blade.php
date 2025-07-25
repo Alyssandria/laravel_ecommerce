@@ -3,8 +3,8 @@
         <div class="flex flex-col items-center gap-6">
             <x-icon-logofull class="w-52" />
             <div class="pill p-2 w-full flex bg-primary">
-                <x-ui.link href="{{ route('app.auth.login') }}" variant="pill">Login</x-ui>
-                    <x-ui.link href="{{ route('app.auth.register') }}" variant="pill">Register</x-ui>
+                <x-ui.link href="{{ route('login') }}" variant="pill">Login</x-ui>
+                    <x-ui.link href="{{ route('register') }}" variant="pill">Register</x-ui>
             </div>
             <span class="text-grey">Discover your true self now!</span>
         </div>
